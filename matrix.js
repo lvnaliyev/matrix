@@ -5,7 +5,7 @@ var digit,
   },
   codeArea = document.querySelector(".demo"),
   generate = function (e) {
-    if (e.keyCode == "103") {
+    if (e.buttons == "0") {
       // replace old result with one digit
       codeArea.innerHTML = randomize();
       // then generate the rest of the digits
@@ -15,4 +15,4 @@ var digit,
       }
     }
   };
-window.addEventListener("keypress", generate);
+window.addEventListener("click", generate);
